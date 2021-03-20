@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir installTemp
 cd installTemp
 sudo apt-get update
@@ -36,8 +37,9 @@ chmod 777 install.sh
 ./install.sh
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
-wget https://raw.githubusercontent.com/dracula/wallpaper/master/base.png
-gsettings get org.gnome.desktop.background picture-uri 'file:base.png'
+location=~/Wallpaper.png
+sudo wget https://raw.githubusercontent.com/dracula/wallpaper/master/base.png -O $location 
+gsettings set org.gnome.desktop.background picture-uri file:///$location
 
 cd ..
 rm -rf installTemp
