@@ -17,6 +17,9 @@ sudo apt install -y neofetch
 yes | sudo snap install --classic code
 yes | sudo snap install discord
 yes | sudo snap install intellij-idea-community --classic
+script -q -c ‘yes | sudo snap install spotify’
+script -q -c ‘yes | sudo snap install intellij-idea-community --classic’
+script -q -c ‘yes | sudo snap install discord’
 
 git clone https://github.com/dracula/gnome-terminal
 cd gnome-terminal
