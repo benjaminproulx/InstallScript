@@ -19,6 +19,7 @@ sudo apt install -y neofetch
 yes | sudo snap install --classic code
 yes | sudo snap install discord
 yes | sudo snap install intellij-idea-community --classic
+# snap sucks balls but it is what it is
 
 git clone https://github.com/dracula/gnome-terminal
 cd gnome-terminal
